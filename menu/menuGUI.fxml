@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.menuselect">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="353.0" prefWidth="175.0">
+         <children>
+            <AnchorPane layoutX="-6.0" layoutY="361.0" />
+            <TableView fx:id="MainTable" layoutX="-6.0" prefHeight="339.0" prefWidth="182.0" AnchorPane.bottomAnchor="59.0" AnchorPane.leftAnchor="-6.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn fx:id="Menuname" prefWidth="75.0" text="이름" />
+                <TableColumn fx:id="money" prefWidth="75.0" text="금액" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <ToolBar layoutX="-6.0" layoutY="362.0" prefHeight="40.0" prefWidth="182.0">
+              <items>
+                <Button fx:id="Order" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="23.0" prefWidth="85.0" text="주문하기" />
+                  <Button fx:id="Cancel" mnemonicParsing="false" onAction="#CancelAction" prefHeight="23.0" prefWidth="80.0" text="취소하기" />
+              </items>
+            </ToolBar>
+            <Label fx:id="Totalmoney" layoutX="1.0" layoutY="340.0" prefHeight="30.0" prefWidth="175.0" text="합계금액:" />
+            <TextField fx:id="TotalM" layoutX="55.0" layoutY="344.0" prefHeight="23.0" prefWidth="119.0" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="538.0" prefWidth="417.0">
+         <children>
+            <ScrollPane hbarPolicy="ALWAYS" prefHeight="400.0" prefWidth="417.0" vbarPolicy="ALWAYS">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="486.0" prefWidth="403.0">
+                     <children>
+                        <TabPane prefHeight="484.0" prefWidth="417.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="Steak">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="417.0">
+                                       <children>
+                                          <ImageView fx:id="imageview2" fitHeight="126.0" fitWidth="200.0">
+                                             <image>
+                                                <Image url="@grid_20130523134605.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="imageview1" fitHeight="126.0" fitWidth="200.0" layoutY="140.0">
+                                             <image>
+                                                <Image url="@grid_20170510102758.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Button fx:id="btn1" layoutX="107.0" layoutY="118.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="64.0" text="담아두기" />
+                                          <Button fx:id="btn2" layoutX="106.0" layoutY="267.0" mnemonicParsing="false" onAction="#handleButtonAction" text="담아두기" />
+                                          <ImageView fx:id="imageview3" fitHeight="126.0" fitWidth="200.0" layoutY="278.0">
+                                             <image>
+                                                <Image url="@grid_20170510102758.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Button fx:id="plus" layoutX="80.0" layoutY="118.0" mnemonicParsing="false" onAction="#AddButton" prefHeight="23.0" prefWidth="28.0" text="+" />
+                                          <Button fx:id="minus" layoutX="79.0" layoutY="141.0" mnemonicParsing="false" onAction="#AddButton" prefHeight="23.0" prefWidth="28.0" text="-" />
+                                          <TextField fx:id="count" layoutX="45.0" layoutY="119.0" prefHeight="40.0" prefWidth="34.0" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="Juice&amp;Dessert">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </children></AnchorPane>
+  </items>
+</SplitPane>
