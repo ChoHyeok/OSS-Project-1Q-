@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.GoReview">
+   <children>
+      <Button fx:id="btn4" layoutX="175.0" layoutY="161.0" mnemonicParsing="false" onAction="#Write" prefHeight="75.0" prefWidth="150.0" text="리뷰 작성" />
+      <Button fx:id="btn5" layoutX="175.0" layoutY="369.0" mnemonicParsing="false" onAction="#See" prefHeight="75.0" prefWidth="150.0" text="리뷰 보기" />
+   </children>
+</AnchorPane>

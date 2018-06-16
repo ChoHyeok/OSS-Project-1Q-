@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReviewRadiobutton">
+   <children>
+      <Label alignment="CENTER" layoutX="500.0" layoutY="54.0" prefHeight="50.0" prefWidth="200.0" text="리뷰">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <TableView layoutX="14.0" layoutY="170.0" prefHeight="616.0" prefWidth="457.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="성별" />
+          <TableColumn prefWidth="288.0" text="내용" />
+            <TableColumn prefWidth="93.0" text="작성일" />
+        </columns>
+      </TableView>
+      <TextArea layoutX="526.0" layoutY="253.0" prefHeight="450.0" prefWidth="600.0" />
+      <RadioButton fx:id="Mrb" layoutX="526.0" layoutY="170.0" mnemonicParsing="false" onAction="#radioselect1" text="남">
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="Wrb" layoutX="592.0" layoutY="170.0" mnemonicParsing="false" onAction="#radioselect1" text="여" toggleGroup="$gender" />
+      <RadioButton fx:id="Fiverb" layoutX="526.0" layoutY="210.0" mnemonicParsing="false" onAction="#radioselect2" text="5">
+         <toggleGroup>
+            <ToggleGroup fx:id="rating" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="Fourrb" layoutX="592.0" layoutY="210.0" mnemonicParsing="false" onAction="#radioselect2" text="4" toggleGroup="$rating" />
+      <RadioButton fx:id="Threerb" layoutX="663.0" layoutY="210.0" mnemonicParsing="false" onAction="#radioselect2" text="3" toggleGroup="$rating" />
+      <RadioButton fx:id="Tworb" layoutX="723.0" layoutY="210.0" mnemonicParsing="false" onAction="#radioselect2" text="2" toggleGroup="$rating" />
+      <RadioButton fx:id="Onerb" layoutX="784.0" layoutY="210.0" mnemonicParsing="false" onAction="#radioselect2" text="1" toggleGroup="$rating" />
+      <Label fx:id="lb1" layoutX="849.0" layoutY="161.0" prefHeight="25.0" prefWidth="65.0" />
+      <Label fx:id="lb2" layoutX="849.0" layoutY="208.0" prefHeight="25.0" prefWidth="65.0" />
+   </children>
+</AnchorPane>

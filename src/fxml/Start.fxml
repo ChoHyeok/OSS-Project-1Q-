@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GoReview">
+   <children>
+      <Label alignment="CENTER" layoutX="450.0" layoutY="150.0" prefHeight="150.0" prefWidth="350.0" text="SM 식당" textAlignment="CENTER" textFill="#9e4646">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn2" layoutX="550.0" layoutY="650.0" mnemonicParsing="false" onAction="#Goreview" prefHeight="50.0" prefWidth="150.0" text="리뷰" />
+      <Button layoutX="150.0" layoutY="650.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="메뉴판" />
+      <Button layoutX="950.0" layoutY="650.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="주문서" />
+   </children>
+</AnchorPane>

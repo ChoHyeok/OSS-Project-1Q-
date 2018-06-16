@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReviewWriteController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="229.0" minWidth="0.0" prefWidth="94.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="533.0" minWidth="10.0" prefWidth="495.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="63.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="120.0" minHeight="0.0" prefHeight="18.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="244.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="267.0" minHeight="10.0" prefHeight="267.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="제목" />
+      <Label text="성별" GridPane.rowIndex="1" />
+      <Label text="평점" GridPane.rowIndex="2" />
+      <Label text="날짜" GridPane.rowIndex="3" />
+      <Label text="내용" GridPane.rowIndex="4" />
+      <TextField prefHeight="29.0" prefWidth="409.0" GridPane.columnIndex="1" />
+      <ComboBox fx:id="combobox1" onAction="#comboChange" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <ComboBox fx:id="combobox2" onAction="#comboChange" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <TextArea prefHeight="127.0" prefWidth="329.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <ToolBar prefHeight="40.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+        <items>
+          <Button mnemonicParsing="false" text="저장" />
+            <Button mnemonicParsing="false" text="뒤로" />
+        </items>
+      </ToolBar>
+   </children>
+</GridPane>
