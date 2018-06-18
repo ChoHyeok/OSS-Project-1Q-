@@ -14,7 +14,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<SplitPane dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.menuselect">
+<SplitPane dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="401.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.menuselect">
   <items>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="353.0" prefWidth="175.0">
          <children>
@@ -35,21 +35,20 @@
               </items>
             </ToolBar>
             <Label fx:id="Totalmoney" layoutX="1.0" layoutY="340.0" prefHeight="30.0" prefWidth="175.0" text="합계금액:" />
-            <TextField fx:id="TotalM" layoutX="55.0" layoutY="344.0" prefHeight="23.0" prefWidth="119.0" />
          </children></AnchorPane>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="538.0" prefWidth="417.0">
          <children>
-            <ScrollPane hbarPolicy="ALWAYS" prefHeight="400.0" prefWidth="417.0" vbarPolicy="ALWAYS">
+            <ScrollPane hbarPolicy="ALWAYS" layoutY="33.0" prefHeight="367.0" prefWidth="417.0" vbarPolicy="ALWAYS">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="486.0" prefWidth="403.0">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="625.0" prefWidth="403.0">
                      <children>
-                        <TabPane prefHeight="484.0" prefWidth="417.0" tabClosingPolicy="UNAVAILABLE">
+                        <TabPane prefHeight="461.0" prefWidth="417.0" tabClosingPolicy="UNAVAILABLE">
                           <tabs>
                             <Tab text="Steak">
                               <content>
                                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="417.0">
                                        <children>
-                                          <ImageView fx:id="imageview2" fitHeight="126.0" fitWidth="200.0">
+                                          <ImageView fx:id="imageview2" fitHeight="117.0" fitWidth="200.0">
                                              <image>
                                                 <Image url="@grid_20130523134605.png" />
                                              </image>
@@ -59,23 +58,93 @@
                                                 <Image url="@grid_20170510102758.png" />
                                              </image>
                                           </ImageView>
-                                          <Button fx:id="btn1" layoutX="107.0" layoutY="118.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="64.0" text="담아두기" />
-                                          <Button fx:id="btn2" layoutX="106.0" layoutY="267.0" mnemonicParsing="false" onAction="#handleButtonAction" text="담아두기" />
-                                          <ImageView fx:id="imageview3" fitHeight="126.0" fitWidth="200.0" layoutY="278.0">
+                                          <Button fx:id="btn" layoutX="132.0" layoutY="118.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="64.0" text="담아두기" />
+                                          <Button fx:id="btn1" layoutX="132.0" layoutY="257.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="64.0" text="담아두기" />
+                                          <Button fx:id="plus" layoutX="105.0" layoutY="119.0" mnemonicParsing="false" onAction="#AddButton" prefHeight="23.0" prefWidth="28.0" text="+" />
+                                          <Button fx:id="minus" layoutX="105.0" layoutY="142.0" mnemonicParsing="false" onAction="#AddButton" prefHeight="23.0" prefWidth="28.0" text="-" />
+                                          <TextField fx:id="count" layoutX="71.0" layoutY="118.0" prefHeight="47.0" prefWidth="34.0" />
+                                          <Label layoutY="119.0" prefHeight="23.0" prefWidth="70.0" text="뉴욕스트립" />
+                                          <Label layoutY="142.0" prefHeight="23.0" prefWidth="70.0" text="35000" />
+                                          <Label layoutY="256.0" prefHeight="23.0" prefWidth="70.0" text="갈릭 립아이" />
+                                          <Label layoutY="279.0" prefHeight="23.0" prefWidth="70.0" text="38000" />
+                                          <TextField fx:id="count1" layoutX="71.0" layoutY="258.0" prefHeight="47.0" prefWidth="34.0" />
+                                          <Button fx:id="plus1" layoutX="105.0" layoutY="257.0" mnemonicParsing="false" onAction="#AddButton" prefHeight="23.0" prefWidth="28.0" text="+" />
+                                          <Button fx:id="minus1" layoutX="105.0" layoutY="280.0" mnemonicParsing="false" onAction="#AddButton" prefHeight="23.0" prefWidth="28.0" text="-" />
+                                          <ImageView fitHeight="117.0" fitWidth="200.0" layoutX="196.0">
                                              <image>
-                                                <Image url="@grid_20170510102758.png" />
+                                                <Image url="@../../image/레인지랜드%20립레츠.png" />
                                              </image>
                                           </ImageView>
-                                          <Button fx:id="plus" layoutX="80.0" layoutY="118.0" mnemonicParsing="false" onAction="#AddButton" prefHeight="23.0" prefWidth="28.0" text="+" />
-                                          <Button fx:id="minus" layoutX="79.0" layoutY="141.0" mnemonicParsing="false" onAction="#AddButton" prefHeight="23.0" prefWidth="28.0" text="-" />
-                                          <TextField fx:id="count" layoutX="45.0" layoutY="119.0" prefHeight="40.0" prefWidth="34.0" />
+                                          <Button fx:id="btn2" layoutX="339.0" layoutY="119.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="64.0" text="담아두기" />
+                                          <TextField fx:id="count2" layoutX="279.0" layoutY="119.0" prefHeight="47.0" prefWidth="34.0" />
+                                          <Label layoutX="198.0" layoutY="120.0" prefHeight="23.0" prefWidth="80.0" text="레인지 립레츠" />
+                                          <Label layoutX="208.0" layoutY="143.0" prefHeight="23.0" prefWidth="70.0" text="28000" />
+                                          <ImageView fitHeight="117.0" fitWidth="200.0" layoutX="212.0" layoutY="142.0">
+                                             <image>
+                                                <Image url="@../../image/베이비%20백%20립.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Button fx:id="btn3" layoutX="340.0" layoutY="258.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="64.0" text="담아두기" />
+                                          <Label layoutX="208.0" layoutY="257.0" prefHeight="23.0" prefWidth="70.0" text="베이비 백립" />
+                                          <Label layoutX="208.0" layoutY="280.0" prefHeight="23.0" prefWidth="70.0" text="28000" />
+                                          <TextField fx:id="count3" layoutX="279.0" layoutY="259.0" prefHeight="47.0" prefWidth="34.0" />
+                                          <Button fx:id="plus3" layoutX="313.0" layoutY="258.0" mnemonicParsing="false" onAction="#AddButton" prefHeight="23.0" prefWidth="28.0" text="+" />
+                                          <Button fx:id="minus3" layoutX="313.0" layoutY="281.0" mnemonicParsing="false" onAction="#AddButton" prefHeight="23.0" prefWidth="28.0" text="-" />
+                                          <Button fx:id="plus2" layoutX="312.0" layoutY="119.0" mnemonicParsing="false" onAction="#AddButton" prefHeight="23.0" prefWidth="28.0" text="+" />
+                                          <Button fx:id="minus2" layoutX="312.0" layoutY="142.0" mnemonicParsing="false" onAction="#AddButton" prefHeight="23.0" prefWidth="28.0" text="-" />
                                        </children>
                                     </AnchorPane>
                               </content>
                             </Tab>
                             <Tab text="Juice&amp;Dessert">
                               <content>
-                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="117.0" fitWidth="200.0">
+                                             <image>
+                                                <Image url="@../../image/콜라.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutY="117.0" prefHeight="23.0" prefWidth="70.0" text="콜라" />
+                                          <Label layoutY="140.0" prefHeight="23.0" prefWidth="70.0" text="2000" />
+                                          <TextField fx:id="count4" layoutX="71.0" layoutY="118.0" prefHeight="47.0" prefWidth="34.0" />
+                                          <Button fx:id="plus4" layoutX="105.0" layoutY="119.0" mnemonicParsing="false" onAction="#AddButton" prefHeight="23.0" prefWidth="28.0" text="+" />
+                                          <Button fx:id="minus4" layoutX="105.0" layoutY="142.0" mnemonicParsing="false" onAction="#AddButton" prefHeight="23.0" prefWidth="28.0" text="-" />
+                                          <Button fx:id="btn4" layoutX="133.0" layoutY="119.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="64.0" text="담아두기" />
+                                          <ImageView fitHeight="117.0" fitWidth="200.0" layoutY="165.0">
+                                             <image>
+                                                <Image url="@../../image/사이다.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutY="282.0" prefHeight="23.0" prefWidth="70.0" text="사이다" />
+                                          <Label layoutY="305.0" prefHeight="23.0" prefWidth="70.0" text="2000" />
+                                          <TextField fx:id="count5" layoutX="71.0" layoutY="282.0" prefHeight="47.0" prefWidth="34.0" />
+                                          <Button fx:id="plus5" layoutX="105.0" layoutY="282.0" mnemonicParsing="false" onAction="#AddButton" prefHeight="23.0" prefWidth="28.0" text="+" />
+                                          <Button fx:id="minus5" layoutX="105.0" layoutY="305.0" mnemonicParsing="false" onAction="#AddButton" prefHeight="23.0" prefWidth="28.0" text="-" />
+                                          <Button fx:id="btn5" layoutX="133.0" layoutY="282.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="64.0" text="담아두기" />
+                                          <ImageView fitHeight="117.0" fitWidth="200.0" layoutX="200.0">
+                                             <image>
+                                                <Image url="@../../image/치킨%20텐더%20샐러드.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="209.0" layoutY="118.0" prefHeight="23.0" prefWidth="70.0" text="치킨 샐러드" />
+                                          <Label layoutX="209.0" layoutY="141.0" prefHeight="23.0" prefWidth="70.0" text="12000" />
+                                          <TextField fx:id="count6" layoutX="280.0" layoutY="119.0" prefHeight="47.0" prefWidth="34.0" />
+                                          <Button fx:id="plus6" layoutX="314.0" layoutY="120.0" mnemonicParsing="false" onAction="#AddButton" prefHeight="23.0" prefWidth="28.0" text="+" />
+                                          <Button fx:id="minus6" layoutX="314.0" layoutY="143.0" mnemonicParsing="false" onAction="#AddButton" prefHeight="23.0" prefWidth="28.0" text="-" />
+                                          <Button fx:id="btn6" layoutX="342.0" layoutY="120.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="64.0" text="담아두기" />
+                                          <ImageView fitHeight="117.0" fitWidth="200.0" layoutX="200.0" layoutY="165.0">
+                                             <image>
+                                                <Image url="@../../image/시저%20샐러드.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="209.0" layoutY="281.0" prefHeight="23.0" prefWidth="70.0" text="시저 샐러드" />
+                                          <Label layoutX="209.0" layoutY="304.0" prefHeight="23.0" prefWidth="70.0" text="8000" />
+                                          <TextField fx:id="count7" layoutX="280.0" layoutY="283.0" prefHeight="47.0" prefWidth="34.0" />
+                                          <Button fx:id="plus7" layoutX="314.0" layoutY="283.0" mnemonicParsing="false" onAction="#AddButton" prefHeight="23.0" prefWidth="28.0" text="+" />
+                                          <Button fx:id="minus7" layoutX="314.0" layoutY="306.0" mnemonicParsing="false" onAction="#AddButton" prefHeight="23.0" prefWidth="28.0" text="-" />
+                                          <Button fx:id="btn7" layoutX="342.0" layoutY="283.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="64.0" text="담아두기" />
+                                       </children></AnchorPane>
                               </content>
                             </Tab>
                           </tabs>
@@ -84,6 +153,11 @@
                   </AnchorPane>
               </content>
             </ScrollPane>
+            <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="192.0" layoutY="-1.0" onMouseClicked="#HomeButton">
+               <image>
+                  <Image url="@../../depositphotos_52118013-stock-illustration-home-button.jpg" />
+               </image>
+            </ImageView>
          </children></AnchorPane>
   </items>
 </SplitPane>

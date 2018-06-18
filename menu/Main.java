@@ -22,7 +22,7 @@ public class Main extends Application {
 	
 	public Main() {
 		
-		menuList.add(new List("한우 스테이크",35000));
+		//menuList.add(new List("한우 스테이크",35000));
 
 		
 	}
